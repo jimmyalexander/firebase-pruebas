@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIREBASE</title>
+
+
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+    
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDodbbi0zk7XQqXmUICTtcIRAElSQaXuIs",
+            authDomain: "register-user-a5781.firebaseapp.com",
+            databaseURL: "https://register-user-a5781.firebaseio.com",
+            projectId: "register-user-a5781",
+            storageBucket: "register-user-a5781.appspot.com",
+            messagingSenderId: "132937404023",
+            appId: "1:132937404023:web:504e2933f101eecc21c072"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+
+          
+    </script>
+    
+</head>
+<body>
+  <header id="header"><a href="">Firebase</a>
+    <div id="container"></div>
+  </header>
+  <h1>REGISTRO</h1>
+  <form id="formulario">
+    <label for="mail">E-mail</label>
+    <input type="email" name="" id="mail" required>
+    <label for="pass">Contraseña</label>
+    <input type="password" name="" id="password" required>
+    <button id="boton" type="button" >Enviar</button>
+  </form>
+  <h1>Inicio Sesion</h1>
+  <form >
+    <label for="mail_iniciar">E-mail</label>
+    <input type="email" name="" id="mail_iniciar" required>
+    <label for="password_iniciar">Contraseña</label>
+    <input type="password" name="" id="password_iniciar" required>
+    <button id="boton_iniciar" type="button" >Iniciar Sesión</button>
+  </form>
+
+  <form action="">
+    <label for="">Subir archivo</label>
+    <input type="file" name="" id="photo">
+
+    <button type="button" id="subir_img">Subir archivo</button>
+
+    <div class="card-body">
+      <img src="" id="image" alt="">
+    </div>
+  </form>
+
+
+  <script src="index.js"></script>  
+
+
+
+</body>
+</html>
